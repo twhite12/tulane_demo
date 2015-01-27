@@ -12,9 +12,11 @@ cat data/clean/country.cc.txt > $OUTPUT_FILE
 mv -v data/clean/country.cc.txt data/clean/country.cc.processed
 sleep 2
 
+echo adding country data
+sleep 5
 cat data/clean/*.cc.txt 
 sleep 2
-cat data/clean/*.cc.txt >> $OUTPUT_FILE
+cat data/clean/*.cc.txt >> $OUTPUT_FILE #>> is concatenate - sticks the text to the bottom of the file, doesn't overwrite
 
 mv -v data/clean/country.cc.processed data/clean/country.cc.txt
 
