@@ -15,5 +15,7 @@ head -24 Guinea.cc.txt > 3.txt
 tail -12 3.txt > 4.txt
 mv -v 4.txt Guinea.cc.txt
 rm 3.txt
+cd ../..
+sleep 1
 echo All Done Bitches
 
